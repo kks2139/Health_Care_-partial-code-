@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_health_care_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.app_dev.healthcare.activity.HealthCareMainActivity"
+    tools:showIn="@layout/app_bar_health_care_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <com.triggertrap.seekarc.SeekArc
+                android:id="@+id/controller_button_intensity_seek"
+                android:layout_width="310dp"
+                android:layout_height="310dp"
+                android:layout_centerInParent="true"
+                android:padding="30dp"
+                app:arcWidth="3dp"
+                app:max="100"
+                app:progressColor="#ff677c"
+                app:rotation="90"
+                app:roundEdges="true"
+                app:startAngle="210"
+                app:sweepAngle="120"
+                app:thumb="@drawable/img_ctr_btn" />
+
+            <RelativeLayout
+                android:id="@+id/controller_ll"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:layout_width="277dp"
+                    android:layout_height="277dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/img_main_base"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.12"></LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.61"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.42"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:layout_width="7dp"
+                                    android:layout_height="11dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@drawable/img_min_ico" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal">
+
+                                <com.jesusm.holocircleseekbar.lib.HoloCircleSeekBar
+                                    android:id="@+id/controller_button_a_seek"
+                                    android:layout_width="56dp"
+                                    android:layout_height="56dp"
+                                    android:background="@drawable/img_mainbase_btn_nor"
+                                    app:max="100"
+                                    app:pointer_color="#1bbda2"
+                                    app:pointer_halo_color="#1bbda2"
+                                    app:pointer_size="1dp"
+                                    app:show_text="false"
+                                    app:wheel_active_color="#1bbda2"
+                                    app:wheel_size="8"
+                                    app:wheel_unactive_color="#FFCCCCCC" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="bottom|right">
+
+                                <ImageView
+                                    android:layout_width="18dp"
+                                    android:layout_height="18dp"
+                                    android:background="@drawable/img_max_ico" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.58"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.15"></LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.7"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <ImageButton
+                                    android:id="@+id/controller_button_power"
+                                    android:layout_width="68dp"
+                                    android:layout_height="68dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@drawable/img_main_pw_btn_nor" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="56dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentStart="true"
+                                    android:orientation="horizontal">
+
+                                    <com.jesusm.holocircleseekbar.lib.HoloCircleSeekBar
+                                        android:id="@+id/controller_button_c_seek"
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:background="@drawable/img_mainbase_btn_nor"
+                                        app:max="100"
+                                        app:pointer_color="#ff677c"
+                                        app:pointer_halo_color="#ff677c"
+                                        app:pointer_size="1dp"
+                                        app:show_text="false"
+                                        app:wheel_active_color="#ff677c"
+                                        app:wheel_size="8"
+                                        app:wheel_unactive_color="#FFCCCCCC" />
+
+                                    <com.jesusm.holocircleseekbar.lib.HoloCircleSeekBar
+                                        android:id="@+id/controller_button_b_seek"
+                                        android:layout_width="56dp"
+                                        android:layout_height="56dp"
+                                        android:background="@drawable/img_mainbase_btn_nor"
+                                        app:max="100"
+                                        app:pointer_color="#ff7e30"
+                                        app:pointer_halo_color="#ff7e30"
+                                        app:pointer_size="1dp"
+                                        app:show_text="false"
+                                        app:wheel_active_color="#ff7e30"
+                                        app:wheel_size="8"
+                                        app:wheel_unactive_color="#FFCCCCCC"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_alignParentEnd="true" />
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.15"></LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.21"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="right">
+
+                            <!--<ImageButton-->
+                            <!--android:id="@+id/color_picker_ib"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="bottom"-->
+                            <!--android:layout_marginBottom="10dp"-->
+                            <!--android:background="@android:color/transparent"-->
+                            <!--app:srcCompat="@android:drawable/btn_star_big_on" />-->
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--</android.support.v7.widget.CardView>-->
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/temperature_iv"
+                        android:layout_width="12dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="2dp"
+                        app:srcCompat="@drawable/img_tem" />
+
+                    <TextView
+                        android:id="@+id/temperature_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12.0"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" ℃"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/humidity_iv"
+                        android:layout_width="12dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="2dp"
+                        app:srcCompat="@drawable/img_hum" />
+
+
+                    <TextView
+                        android:id="@+id/humidity_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="65.5"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" %RH"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/step_iv"
+                        android:layout_width="12dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="2dp"
+                        app:srcCompat="@drawable/img_step" />
+
+                    <TextView
+                        android:id="@+id/step_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1230"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Step"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/sleep_iv"
+                        android:layout_width="12dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="2dp"
+                        app:srcCompat="@drawable/img_sleep" />
+
+                    <TextView
+                        android:id="@+id/sleep_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7h 30m"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/weight_iv"
+                        android:layout_width="12dp"
+                        android:layout_height="16dp"
+                        android:layout_marginRight="2dp"
+                        app:srcCompat="@drawable/img_fat" />
+
+                    <TextView
+                        android:id="@+id/weight_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="32.4"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" kg/m2"
+                        android:textSize="8sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/color_picker_ib"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_above="@+id/music_play_ll"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--app:srcCompat="@android:drawable/btn_star_big_off" />-->
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/color_picker_ib"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_above="@id/music_play_ll"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--app:srcCompat="@android:drawable/btn_star_big_on" />-->
+
+            <LinearLayout
+                android:id="@+id/music_play_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/controller_ll"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/music_play_ib"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toLeftOf="@+id/music_title_tv"
+                    android:background="@drawable/img_play_btn" />
+
+                <TextView
+                    android:id="@+id/music_title_tv"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="08. Healing And Relaxing - Pablo Arellano" />
+
+                <ImageButton
+                    android:id="@+id/music_menu_ib"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/img_list_btn" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/music_play_ll"
+                android:layout_alignEnd="@+id/linearLayout"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/color_picker_ib"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/img_color_btn_nor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Color"
+                    android:textColor="#98a3a7"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

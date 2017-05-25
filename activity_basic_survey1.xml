@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        tools:context="com.example.app_dev.healthcare.activity.BasicSurvey1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="23dp"
+            android:text="신체 정보"
+            android:textColor="#4e4e4e"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBorderGray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="23dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="몸무게"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et1"
+                    android:layout_width="173dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/edit_text_hint1"
+                    android:inputType="numberDecimal"
+                    android:textColor="#6f6f6f"
+                    android:textColorHint="#bfbfbf"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center_vertical"
+                    android:text="Kg"
+                    android:textColor="#bfbfbf"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBorderGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="허리둘레"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et2"
+                    android:layout_width="173dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/edit_text_hint2"
+                    android:inputType="numberDecimal"
+                    android:textColor="#6f6f6f"
+                    android:textColorHint="#bfbfbf"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center_vertical"
+                    android:text="Cm"
+                    android:textColor="#bfbfbf"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBorderGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="최고혈압"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et3"
+                    android:layout_width="173dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/edit_text_hint3"
+                    android:inputType="numberDecimal"
+                    android:textColor="#6f6f6f"
+                    android:textColorHint="#bfbfbf"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center_vertical"
+                    android:text="mm/Hg"
+                    android:textColor="#bfbfbf"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBorderGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="최저혈압"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et4"
+                    android:layout_width="173dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/edit_text_hint4"
+                    android:inputType="numberDecimal"
+                    android:textColor="#6f6f6f"
+                    android:textColorHint="#bfbfbf"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center_vertical"
+                    android:text="mm/Hg"
+                    android:textColor="#bfbfbf"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBorderGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="혈당"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et5"
+                    android:layout_width="173dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/edit_text_hint5"
+                    android:inputType="numberDecimal"
+                    android:textColor="#6f6f6f"
+                    android:textColorHint="#bfbfbf"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center_vertical"
+                    android:text="mg/dl"
+                    android:textColor="#bfbfbf"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBorderGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="TG"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et6"
+                    android:layout_width="173dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/edit_text_hint6"
+                    android:inputType="numberDecimal"
+                    android:textColor="#6f6f6f"
+                    android:textColorHint="#bfbfbf"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center_vertical"
+                    android:text="mg/dl"
+                    android:textColor="#bfbfbf"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBorderGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="HDL - C"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et7"
+                    android:layout_width="173dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="end|center_vertical"
+                    android:hint="@string/edit_text_hint7"
+                    android:inputType="numberDecimal"
+                    android:textColor="#6f6f6f"
+                    android:textColorHint="#bfbfbf"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="69dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center_vertical"
+                    android:text="mg/dl"
+                    android:textColor="#bfbfbf"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBorderGray" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:background="#f8f8f8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="23dp"
+            android:text="신상 정보"
+            android:textColor="#4e4e4e"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="23dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="직업"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/s1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="13dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBorderGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="결혼유무"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/s2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="13dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBorderGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="가족구성원수"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/s3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="13dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBorderGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="최종학력"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/s4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="13dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBorderGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="고용안정성"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/s5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="13dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBorderGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="종교"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/s6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="13dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBorderGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="거주유형"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/s7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="13dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBorderGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="82dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="거주지역"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/s8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="13dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBorderGray" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="333dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="19dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/next_button" />
+
+    </LinearLayout>
+</ScrollView>

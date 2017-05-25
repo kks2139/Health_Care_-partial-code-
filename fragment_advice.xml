@@ -1,0 +1,318 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="23sp"
+        android:background="#fefefe"
+        android:orientation="vertical"
+        tools:context="com.example.app_dev.healthcare.activity.Advice$PlaceholderFragment">
+        <!--
+            <TextView
+                android:id="@+id/section_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        -->
+
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23sp"
+            android:text="추천 그림"
+            android:textSize="12sp"
+            android:textColor="@color/colorGray"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/statue_cv"
+            android:layout_width="match_parent"
+            android:layout_height="177sp"
+            android:layout_marginTop="6sp"
+            android:layout_marginLeft="23sp"
+            android:layout_marginRight="23sp"
+            android:background="@color/colorPrimary"
+            app:cardCornerRadius="5sp"
+            app:cardBackgroundColor="@color/cardview_light_background"
+            app:cardElevation="15sp">
+          <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/healing_picture"/>
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35sp"
+            android:layout_marginLeft="23sp"
+            android:layout_marginRight="23sp">
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="추천 음악"
+                android:textSize="12sp"
+                android:textColor="@color/colorGray"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08. Healing And Relaxing - Pablo Arellano"
+                android:textSize="11sp"
+                android:textColor="@color/colorDeepGray"
+                android:layout_alignParentRight="true"/>
+
+            <LinearLayout
+                android:id="@+id/recommended_scent"
+                android:layout_marginTop="33sp"
+                android:layout_below="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="추천향"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorGray"/>
+                <TextView
+                    android:layout_marginTop="6sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="라벤더"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorDeepGray"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/recommended_scent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/scent1"
+                    android:layout_width="34sp"
+                    android:layout_height="34sp"/>
+                    <!--android:src="@drawable/img_rcm_btn_nor"/>-->
+                <ImageView
+                    android:id="@+id/scent2"
+                    android:layout_width="34sp"
+                    android:layout_height="34sp"
+                    android:layout_marginLeft="10sp"
+                    android:src="@drawable/img_rcm_btn_nor"/>
+
+                <ImageView
+                    android:id="@+id/scent3"
+                    android:layout_width="34sp"
+                    android:layout_height="34sp"
+                    android:layout_marginLeft="10sp"
+                    android:src="@drawable/img_rcm_btn_nor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recommended_color"
+                android:layout_marginTop="33sp"
+                android:layout_below="@+id/recommended_scent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="추천색"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorGray"/>
+                <TextView
+                    android:layout_marginTop="6sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="오렌지, 녹색"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorDeepGray"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/recommended_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="34sp"
+                    android:layout_height="34sp"
+                    app:cardCornerRadius="17sp">
+                    <ImageView
+                        android:id="@+id/color1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffa500"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="34sp"
+                    android:layout_height="34sp"
+                    android:layout_marginLeft="10sp"
+                    app:cardCornerRadius="17sp">
+                    <ImageView
+                        android:id="@+id/color2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#31ab24"/>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/device_apply"
+            android:layout_width="333sp"
+            android:layout_height="62sp"
+            android:layout_marginTop="26sp"
+            android:layout_marginBottom="26sp"
+            android:layout_gravity="center"
+            android:background="@drawable/device_apply_button_red"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16sp"
+            android:background="#f8f8f8"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58sp"
+            android:layout_marginLeft="23sp"
+            android:layout_marginRight="23sp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="46sp"
+                android:layout_height="wrap_content"
+                android:text="지압"
+                android:textSize="18sp"
+                android:textColor="@color/colorDeepGray"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="243sp"
+                android:layout_height="wrap_content"
+                android:text="음룡천 혈자리 지압법/경희대학교 RCUBS"
+                android:textSize="11sp"
+                android:textColor="@color/colorGray"
+                android:layout_gravity="center_vertical"/>
+            <Button
+                android:id="@+id/video_play"
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/video_play_button_red"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3sp"
+            android:layout_marginLeft="23sp"
+            android:layout_marginRight="23sp"
+            android:background="#efefef"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58sp"
+            android:layout_marginLeft="23sp"
+            android:layout_marginRight="23sp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="46sp"
+                android:layout_height="wrap_content"
+                android:text="음식"
+                android:textSize="18sp"
+                android:textColor="@color/colorDeepGray"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="243sp"
+                android:layout_height="wrap_content"
+                android:text="음룡천 혈자리 지압법/경희대학교 RCUBS"
+                android:textSize="11sp"
+                android:textColor="@color/colorGray"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3sp"
+            android:layout_marginLeft="23sp"
+            android:layout_marginRight="23sp"
+            android:background="#efefef"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58sp"
+            android:layout_marginLeft="23sp"
+            android:layout_marginRight="23sp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="46sp"
+                android:layout_height="wrap_content"
+                android:text="환경"
+                android:textSize="18sp"
+                android:textColor="@color/colorDeepGray"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="243sp"
+                android:layout_height="wrap_content"
+                android:text="음룡천 혈자리 지압법/경희대학교 RCUBS"
+                android:textSize="11sp"
+                android:textColor="@color/colorGray"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3sp"
+            android:layout_marginLeft="23sp"
+            android:layout_marginRight="23sp"
+            android:background="#efefef"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="58sp"
+            android:layout_marginLeft="23sp"
+            android:layout_marginRight="23sp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="46sp"
+                android:layout_height="wrap_content"
+                android:text="명언"
+                android:textSize="18sp"
+                android:textColor="@color/colorDeepGray"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="243sp"
+                android:layout_height="wrap_content"
+                android:text="음룡천 혈자리 지압법/경희대학교 RCUBS"
+                android:textSize="11sp"
+                android:textColor="@color/colorGray"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="118sp"
+            android:orientation="horizontal"
+            android:background="#f8f8f8"
+            android:gravity="center">
+            <Button
+                android:layout_width="171sp"
+                android:layout_height="62sp"
+               android:background="@drawable/to_main_button"/>
+            <Button
+                android:layout_width="171sp"
+                android:layout_height="62sp"
+                android:background="@drawable/again_button"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

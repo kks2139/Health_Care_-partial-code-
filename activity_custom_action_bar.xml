@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/action_bar_back_btn"
+        android:layout_width="25dp"
+        android:layout_height="29dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/img_actionbar_back_btn"/>
+
+    <TextView
+        android:id="@+id/action_bar_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="조언보기"
+        android:textSize="20sp"
+        android:textColor="@color/colorDeepGray"
+        android:gravity="center"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

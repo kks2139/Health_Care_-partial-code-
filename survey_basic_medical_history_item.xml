@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/disease"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/color6fGray"
+            android:textSize="12sp" />
+
+        <RadioGroup
+            android:id="@+id/radGroupMedSurvey"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/year1"
+                android:layout_width="53dp"
+                android:layout_height="55dp"
+                android:background="@drawable/medical_radio_btn1"
+                android:button="@null"
+                android:text="@string/num1"
+                android:textSize="0sp" />
+
+            <RadioButton
+                android:id="@+id/year3"
+                android:layout_width="53dp"
+                android:layout_height="55dp"
+                android:background="@drawable/medical_radio_btn2"
+                android:button="@null"
+                android:text="@string/num2"
+                android:textSize="0sp" />
+
+            <RadioButton
+                android:id="@+id/year5"
+                android:layout_width="53dp"
+                android:layout_height="55dp"
+                android:background="@drawable/medical_radio_btn3"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/num3"
+                android:textSize="0sp" />
+
+            <RadioButton
+                android:id="@+id/none"
+                android:layout_width="53dp"
+                android:layout_height="55dp"
+                android:background="@drawable/medical_radio_btn4"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/num4"
+                android:textSize="0sp" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>
